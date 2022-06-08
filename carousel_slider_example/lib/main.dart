@@ -12,9 +12,21 @@ class MyCarouselApp extends StatefulWidget {
 class _MyCarouselAppState extends State<MyCarouselApp> {
   @override
   Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  const Home({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Carousel Demo'),
+        centerTitle: true,
       ),
     );
   }
